@@ -1,0 +1,15 @@
+node_modules
+build
+.next
+copy.env.json
+merged
+*.env.json
+out/
+.husky/
+artifacts/
+cache/
+typechain/
+.lab/
+.DS_store
+assets/1337.json
+.env
