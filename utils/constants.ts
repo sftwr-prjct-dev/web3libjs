@@ -114,23 +114,6 @@ const getSwapConfig = (nodeURL) => ({
             }
         }
     },
-    avalanche: {
-        name: 'avalanche',
-        value: 'avalanche',
-        url: `${nodeURL}/avalanche/mainnet`,
-        symbol: 'AVAX',
-        chainID: 43114,
-        exchanges: {
-            traderjoe: {
-                name: 'traderjoe',
-                value: 'traderjoe',
-                routerAddress: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
-                factoryAddress: "0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10",
-                initCodeHash: "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
-                wavax: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
-            },
-        }
-    },
     binance_testnet: {
         name: 'binance testnet',
         value: 'binance_testnet',
@@ -166,9 +149,20 @@ const getSwapConfig = (nodeURL) => ({
     },
     avalanche: {
         name: 'avalanche',
-        value: 'select',
+        value: 'avalanche',
         url: `${nodeURL}/avalanche/mainnet`,
-        exchanges: {}
+        symbol: 'AVAX',
+        chainID: 43114,
+        exchanges: {
+            traderjoe: {
+                name: 'traderjoe',
+                value: 'traderjoe',
+                routerAddress: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
+                factoryAddress: "0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10",
+                initCodeHash: "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
+                wavax: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+            },
+        }
     },
     fantom: {
         name: 'fantom',

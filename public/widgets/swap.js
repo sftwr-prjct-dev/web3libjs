@@ -15,7 +15,7 @@
 
     window.Moralis.start({ serverUrl: "https://q2mwhjgtznwk.usemoralis.com:2053/server", appId: "8CWG61HAxVNJxFYkHFpM9TMzP2c59nSuGzCIXW4o" })
 
-    const web3libURL = "https://web3lib.com"
+    const web3libURL = "https://web3libjs.on.fleek.co"
     // const web3libURL = "http://localhost:3001"
     // const web3libURL = "http://192.168.100.90:3000"
     const btn = document.getElementById("w3l_swap_button");
