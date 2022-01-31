@@ -160,7 +160,7 @@
             
             const swapFromBaseParams = {
                 contractAddress: routerAddress,
-                functionName: 'swapETHForExactTokens',
+                functionName: 'swapAVAXForExactTokens',
                 abi: routerABI,
                 params: { amountOut, path, to: toAddress, deadline },
                 msgValue: amountInMax
@@ -182,7 +182,7 @@
 
             const swapFromToken = {
                 contractAddress: routerAddress,
-                functionName: 'swapTokensForExactETH',
+                functionName: 'swapTokensForExactAVAX',
                 abi: routerABI,
                 params: { 
                     amountOut, amountInMax, path, to: toAddress, deadline 
