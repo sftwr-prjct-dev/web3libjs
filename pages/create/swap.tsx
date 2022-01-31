@@ -17,7 +17,7 @@ const tokenABI = [
 ]
 export default function () {
     const [swapConfig] = useState(getSwapConfig(process.env.NEXT_PUBLIC_NODE_KEY))
-    const [data, setData] = useState({logo: "", network:"select", exchange:"select", symbol:"", decimals:0, token:"", ads:true})
+    const [data, setData] = useState({logo: "", network:"select", exchange:"select", symbol:"", decimals:0, token:""})
 
     const {token, network} = data
 
@@ -77,9 +77,6 @@ export default function () {
                     </FormField>
                     <FormField labelText="Your token address" htmlFor="token">
                         <Input value={data.token} onChange={onChange} disabled={data.exchange === "select"} id="token" />
-                    </FormField>
-                    <FormField labelText="Allow adverts" order="order-2" htmlFor="ads">
-                        <input type="checkbox" name="ads" id="ads" checked={data.ads} onChange={handleCheck} className="order-1 mb-2 ml-1 mr-4 ads-check" />
                     </FormField>
                     <Button disabled={!tokens.tokenSymbol} text={`Create ${tokens.tokenSymbol&&tokens.tokenSymbol} swap widget`} className="w-full h-12 mt-6 text-white bg-gray-600 hover:bg-gray-700" onClick={() => {}} />
                 </form>
