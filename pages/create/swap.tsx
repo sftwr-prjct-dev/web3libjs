@@ -50,7 +50,6 @@ export default function () {
         console.log({name, value})
         setData(prevData => ({...prevData, [name]: value}))
     }
-    const handleCheck = e => setData(preData => ({...preData, ads: !preData.ads}))
     const handleSubmit = async (e) => {
         e.preventDefault()
         const w3lData = window.btoa(JSON.stringify(data))
