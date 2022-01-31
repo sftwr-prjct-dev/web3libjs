@@ -162,7 +162,7 @@ export default function Swap() {
                             )
                     }
                 </div>
-                <div className="absolute bottom-0 left-0 w-full text-xs text-center text-gray-500">Widget by <a className="text-blue-500" target="_blank" href="https://web3lib.com" referrerPolicy="no-referrer">Web3lib</a> </div>
+                <div className="absolute bottom-0 left-0 w-full text-xs text-center text-gray-500">Widget by <a className="text-blue-500" target="_blank" href="https://web3widget.on.fleek.co" referrerPolicy="no-referrer">Web3widgets</a> </div>
             </div>
         </div>
     )

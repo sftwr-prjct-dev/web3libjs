@@ -39,7 +39,7 @@ const w3lScript = (data, tokenSymbol) =>
     type="module"
     data-w3ldata='${data}'
     data-w3ltokensymbol='${tokenSymbol}'
-    src="${process.env.NEXT_PUBLIC_DOMAIN}/widgets/swap.js"
+    src="https://${process.env.NEXT_PUBLIC_DOMAIN}/widgets/swap.js"
 ></script>
 `
 

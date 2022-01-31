@@ -90,7 +90,7 @@
 
             console.log({ _nativeBal, tokensBal })
 
-            const tokenBal = (_tokenBal.balance / (10 ** _tokenBal.decimals)).toFixed(Number(_tokenBal.decimals))
+            const tokenBal = _tokenBal ? (_tokenBal.balance / (10 ** _tokenBal.decimals)).toFixed(Number(_tokenBal.decimals)) : 0
             const nativeBal = Number(Moralis.Units.FromWei(_nativeBal.balance)).toFixed(4)
 
             return { chainID, address: this.address, tokenBal, nativeBal  }
