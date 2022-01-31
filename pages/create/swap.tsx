@@ -5,7 +5,7 @@ import FormField from "../../components/FormField";
 import Input from "../../components/Input";
 import Layout from "../../components/Layout";
 import Select from "../../components/Select";
-import { getSwapConfig, w3lButton, w3lScript, } from "../../utils/constants";
+import { getSwapConfig, w3lScript, } from "../../utils/constants";
 import { IoMdCopy } from "react-icons/io";
 
 const tokenABI = [
